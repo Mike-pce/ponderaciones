@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Ponderaciones EvAU/EBAU</title>
+    
+    <!-- Importar fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#109AD3',
+                        secondary: '#003E93',
+                        accent: '#DB0789',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Scrollbar personalizado */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #109AD3;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #003E93;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+     <!-- Navbar -->
+    <header class="bg-gradient-to-r from-secondary to-primary shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://www.academiam25.com/wp-content/uploads/2025/06/2-logos.png" alt="Logo Academia M25" class="h-16 md:h-20 object-contain bg-white rounded-md p-1 shadow-sm">
+                <h1 class="text-2xl font-bold text-white tracking-wide hidden sm:block">Pondera<span class="text-accent">Test</span></h1>
+            </div>
+            <div class="hidden md:block">
+                <p class="text-blue-100 text-sm font-medium">Encuentra las asignaturas que más te suman</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Hero Section & Buscador -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-8 border-t-4 border-accent">
+            <h2 class="text-2xl font-bold text-secondary mb-2">Buscador de Ponderaciones</h2>
+            <!-- Texto Dinámico de Regiones -->
+            <p class="text-gray-600 mb-6">Regiones disponibles: <span id="loadedRegionsText" class="font-semibold text-primary">Cargando datos...</span></p>
+            
+            <!-- Controles Superiores -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <!-- Buscador de texto -->
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Buscar grado (Ej: Medicina)" class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white">
+                </div>
+
+                <!-- Filtro Asignatura -->
+                <div>
+                    <select id="asignaturaFilter" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white appearance-none">
+                        <option value="">¿Qué asignatura cursas? (Todas)</option>
+                        <!-- Opciones generadas dinámicamente -->
+                    </select>
+                </div>
+
+                <!-- Filtro Rama -->
+                <div>
+                    <select id="ramaFilter" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white appearance-none">
+                        <option value="">Todas las Ramas</option>
+                        <option value="Ciencias de la Salud">Ciencias de la Salud</option>
+                        <option value="Ingeniería y Arquitectura">Ingeniería y Arquitectura</option>
+                        <option value="Ciencias">Ciencias</option>
+                        <option value="Ciencias Sociales y Jurídicas">Ciencias Sociales y Jurídicas</option>
+                        <option value="Artes y Humanidades">Artes y Humanidades</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Controles Inferiores (Cascada Geográfica) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Filtro Comunidad -->
+                <div>
+                    <select id="regionFilter" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white appearance-none">
+                        <option value="">Todas las Comunidades</option>
+                    </select>
+                </div>
+
+                <!-- Filtro Universidad -->
+                <div>
+                    <select id="universidadFilter" disabled class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white appearance-none disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed">
+                        <option value="">Todas las Universidades</option>
+                    </select>
+                </div>
+
+                <!-- Filtro Campus -->
+                <div>
+                    <select id="campusFilter" disabled class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors outline-none text-gray-700 bg-gray-50 focus:bg-white appearance-none disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed">
+                        <option value="">Todos los Campus</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Contador de resultados -->
+            <div class="mt-4 flex justify-between items-center">
+                <p class="text-sm text-gray-500 font-medium"><span id="resultsCount">0</span> grados encontrados</p>
+                <button id="resetBtn" class="text-sm text-primary hover:text-secondary font-medium transition-colors cursor-pointer flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    Limpiar filtros
+                </button>
+            </div>
+        </div>
+
+        <!-- Resultados Grid -->
+        <div id="resultsGrid" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- Las tarjetas se insertarán aquí dinámicamente -->
+        </div>
+        
+        <!-- Estado de carga / Sin resultados -->
+        <div id="statusMessage" class="hidden text-center py-12">
+            <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <h3 class="text-xl font-medium text-gray-600">No se han encontrado resultados</h3>
+            <p class="text-gray-500 mt-2">Prueba a cambiar los filtros o los términos de búsqueda.</p>
+        </div>
+    </main>
+
+    <!-- Modal Detalle -->
+    <div id="infoModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4 transition-opacity opacity-0">
+        <div id="modalContent" class="bg-white rounded-2xl shadow-xl w-full max-w-lg transform scale-95 transition-transform overflow-hidden">
+            <div class="bg-secondary p-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-white" id="modalTitle">Detalle de Asignaturas</h3>
+                <button onclick="closeModal()" class="text-white/80 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="p-6 max-h-[70vh] overflow-y-auto" id="modalBody">
+                <!-- Contenido modal -->
+            </div>
+            <div class="p-4 bg-gray-50 border-t flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium hover:bg-gray-300 transition-colors">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar archivo de configuración principal -->
+    <script src="config_comunidades.js"></script>
+
+    <!-- Lógica de la Aplicación -->
+    <script>
+        // --- 1. VARIABLES GLOBALES ---
+        let allData = [];
+        
+        // Elementos del DOM
+        const searchInput = document.getElementById('searchInput');
+        const regionFilter = document.getElementById('regionFilter');
+        const universidadFilter = document.getElementById('universidadFilter');
+        const campusFilter = document.getElementById('campusFilter');
+        const asignaturaFilter = document.getElementById('asignaturaFilter');
+        const ramaFilter = document.getElementById('ramaFilter');
+        const resultsGrid = document.getElementById('resultsGrid');
+        const resultsCount = document.getElementById('resultsCount');
+        const statusMessage = document.getElementById('statusMessage');
+        const resetBtn = document.getElementById('resetBtn');
+        const loadedRegionsText = document.getElementById('loadedRegionsText');
+
+        // --- 2. CARGA DE DATOS DINÁMICA ---
+        async function cargarDatosReales() {
+            let archivos = [];
+            if (typeof archivosComunidades !== 'undefined') {
+                archivos = archivosComunidades;
+            } else if (window.archivosComunidades) {
+                archivos = window.archivosComunidades;
+            } else {
+                console.warn("No se encontró config_comunidades.js. Usando fallback.");
+                archivos = ["aragon_ponderaciones.js"];
+            }
+
+            let loadedAny = false;
+
+            for (const archivo of archivos) {
+                try {
+                    await new Promise((resolve, reject) => {
+                        const script = document.createElement('script');
+                        script.src = archivo;
+                        script.onload = () => {
+                            const varName = 'datos_' + archivo.replace('.js', '').replace(/-/g, '_');
+                            try {
+                                const data = eval(varName);
+                                if (data && Array.isArray(data)) {
+                                    allData = allData.concat(data);
+                                    loadedAny = true;
+                                }
+                            } catch (e) {
+                                console.warn("Variable " + varName + " no encontrada en " + archivo);
+                            }
+                            resolve();
+                        };
+                        script.onerror = () => {
+                            console.error("No se pudo cargar el archivo: " + archivo);
+                            resolve(); 
+                        };
+                        document.head.appendChild(script);
+                    });
+                } catch (error) {
+                    console.error("Error al cargar " + archivo, error);
+                }
+            }
+            
+            if (!loadedAny && allData.length === 0) {
+                statusMessage.innerHTML = `
+                    <svg class="w-16 h-16 text-red-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <h3 class="text-xl font-medium text-gray-600">No se pudieron cargar los datos</h3>
+                    <p class="text-gray-500 mt-2">Asegúrate de que <b>config_comunidades.js</b> y los archivos estén en la misma carpeta.</p>
+                `;
+                statusMessage.classList.remove('hidden');
+                loadedRegionsText.textContent = "Error al cargar datos";
+                return;
+            }
+
+            inicializarFiltros();
+            filtrarDatos();
+
+            // Listeners
+            searchInput.addEventListener('input', filtrarDatos);
+            asignaturaFilter.addEventListener('change', filtrarDatos);
+            ramaFilter.addEventListener('change', filtrarDatos);
+            
+            // Listeners en cascada
+            regionFilter.addEventListener('change', () => {
+                poblarUniversidades();
+                filtrarDatos();
+            });
+            universidadFilter.addEventListener('change', () => {
+                poblarCampus();
+                filtrarDatos();
+            });
+            campusFilter.addEventListener('change', filtrarDatos);
+            
+            resetBtn.addEventListener('click', resetFiltros);
+        }
+
+        // --- 3. FUNCIONES DE FILTROS ---
+        function inicializarFiltros() {
+            // 1. Obtener y mostrar regiones en el texto y filtro
+            const regionesUnicas = [...new Set(allData.map(item => item.region))].sort();
+            loadedRegionsText.textContent = regionesUnicas.join(', ') || 'Ninguna';
+            
+            regionesUnicas.forEach(region => {
+                const option = document.createElement('option');
+                option.value = region;
+                option.textContent = region;
+                regionFilter.appendChild(option);
+            });
+
+            // 2. Obtener todas las asignaturas únicas
+            const asignaturasSet = new Set();
+            allData.forEach(item => {
+                item.asignaturas.forEach(a => asignaturasSet.add(a.nombre));
+            });
+            const asignaturasUnicas = [...asignaturasSet].sort();
+            
+            asignaturasUnicas.forEach(asig => {
+                const option = document.createElement('option');
+                option.value = asig;
+                option.textContent = asig;
+                asignaturaFilter.appendChild(option);
+            });
+        }
+
+        function poblarUniversidades() {
+            const region = regionFilter.value;
+            universidadFilter.innerHTML = '<option value="">Todas las Universidades</option>';
+            
+            if (!region) {
+                universidadFilter.disabled = true;
+                poblarCampus(); // Deshabilitará campus
+                return;
+            }
+            
+            universidadFilter.disabled = false;
+            const univsUnicas = [...new Set(allData.filter(item => item.region === region).map(item => item.universidad))].sort();
+            
+            univsUnicas.forEach(univ => {
+                const option = document.createElement('option');
+                option.value = univ;
+                option.textContent = univ;
+                universidadFilter.appendChild(option);
+            });
+            
+            // Resetear campus al cambiar de región
+            poblarCampus();
+        }
+
+        function poblarCampus() {
+            const univ = universidadFilter.value;
+            campusFilter.innerHTML = '<option value="">Todos los Campus</option>';
+            
+            if (!univ) {
+                campusFilter.disabled = true;
+                return;
+            }
+            
+            // Extraer campus filtrando los que tengan el atributo o ignorando si no lo tienen
+            const campusUnicos = [...new Set(allData
+                .filter(item => item.universidad === univ && item.campus && item.campus.trim() !== '')
+                .map(item => item.campus))].sort();
+            
+            if (campusUnicos.length === 0) {
+                campusFilter.disabled = true;
+            } else {
+                campusFilter.disabled = false;
+                campusUnicos.forEach(campus => {
+                    const option = document.createElement('option');
+                    option.value = campus;
+                    option.textContent = campus;
+                    campusFilter.appendChild(option);
+                });
+            }
+        }
+
+        function filtrarDatos() {
+            const query = searchInput.value.toLowerCase().trim();
+            const asigSelect = asignaturaFilter.value;
+            const rama = ramaFilter.value;
+            const region = regionFilter.value;
+            const univ = universidadFilter.value;
+            const campus = campusFilter.value;
+
+            let filtrados = allData.filter(item => {
+                // Filtro texto
+                const matchText = item.grado.toLowerCase().includes(query);
+                // Filtro Región/Univ/Campus
+                const matchRegion = region === "" || item.region === region;
+                const matchUniv = univ === "" || item.universidad === univ;
+                // Si el filtro campus está seleccionado, comprobar. Si el item no tiene campus, se asume match si se busca 'Todos'
+                const matchCampus = campus === "" || (item.campus && item.campus === campus);
+                // Filtro Rama
+                const matchRama = rama === "" || item.rama === rama;
+                
+                // Filtro Asignatura: Si hay una asignatura seleccionada, la carrera DEBE tenerla con valor > 0
+                const matchAsig = asigSelect === "" || item.asignaturas.some(a => a.nombre === asigSelect);
+
+                return matchText && matchRegion && matchUniv && matchCampus && matchRama && matchAsig;
+            });
+
+            // ORDENAR: Si se ha seleccionado una asignatura, ordenar resultados para que aparezcan primero las de 0.2
+            if (asigSelect !== "") {
+                filtrados.sort((a, b) => {
+                    const valA = a.asignaturas.find(as => as.nombre === asigSelect)?.valor || 0;
+                    const valB = b.asignaturas.find(as => as.nombre === asigSelect)?.valor || 0;
+                    return valB - valA; // Descendente: 0.2 antes que 0.1
+                });
+            }
+
+            renderResults(filtrados, asigSelect);
+        }
+
+        function resetFiltros() {
+            searchInput.value = '';
+            asignaturaFilter.value = '';
+            ramaFilter.value = '';
+            regionFilter.value = '';
+            
+            poblarUniversidades(); // Esto reseteará Univ y Campus y los deshabilitará
+            filtrarDatos();
+        }
+
+        // --- 4. RENDERIZADO ---
+        function renderResults(datos, asignaturaDestacada = "") {
+            resultsGrid.innerHTML = '';
+            resultsCount.textContent = datos.length;
+
+            if (datos.length === 0) {
+                statusMessage.classList.remove('hidden');
+            } else {
+                statusMessage.classList.add('hidden');
+                
+                datos.forEach((item) => {
+                    const card = document.createElement('div');
+                    card.className = "bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col h-full overflow-hidden group cursor-pointer";
+                    
+                    // Separar asignaturas
+                    const pondera02 = item.asignaturas.filter(a => a.valor === 0.2);
+                    const pondera01 = item.asignaturas.filter(a => a.valor === 0.1);
+
+                    // Función para generar las píldoras de asignaturas (resaltando si es necesario)
+                    const generarPildora = (asig, tipo) => {
+                        const esDestacada = asig.nombre === asignaturaDestacada;
+                        if (tipo === 'alta') {
+                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${asig.nombre} (0.2)</span>`;
+                            return `<span class="inline-block bg-green-50 border border-green-200 text-green-800 text-xs px-2.5 py-1 rounded-md shadow-sm">${asig.nombre}</span>`;
+                        } else {
+                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${asig.nombre} (0.1)</span>`;
+                            return `<span class="inline-block bg-blue-50 border border-blue-200 text-secondary text-xs px-2.5 py-1 rounded-md shadow-sm">${asig.nombre}</span>`;
+                        }
+                    };
+
+                    const textoCampus = item.campus ? ` • Campus ${item.campus}` : '';
+
+                    card.innerHTML = `
+                        <!-- Cabecera Tarjeta -->
+                        <div class="p-5 border-b border-gray-100 bg-gray-50/50 group-hover:bg-primary/5 transition-colors">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-accent bg-accent/10 px-2 py-1 rounded-md">${item.rama}</span>
+                                <span class="text-xs font-medium text-gray-500 flex items-center gap-1 text-right">
+                                    <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                    ${item.region}
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-secondary mb-1">${item.grado}</h3>
+                            <p class="text-sm text-gray-600 font-medium">${item.universidad} <span class="text-gray-400 font-normal">${textoCampus}</span></p>
+                        </div>
+                        
+                        <!-- Cuerpo Tarjeta (Ponderaciones) -->
+                        <div class="p-5 flex-grow flex flex-col gap-4">
+                            <!-- Sección 0.2 -->
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold text-sm border border-green-200">0.2</span>
+                                    <h4 class="text-sm font-semibold text-gray-700">Máxima ponderación</h4>
+                                </div>
+                                <div class="flex flex-wrap gap-2 pl-10">
+                                    ${pondera02.length > 0 
+                                        ? pondera02.map(asig => generarPildora(asig, 'alta')).join('')
+                                        : '<span class="text-xs text-gray-400 italic">No hay datos para 0.2</span>'
+                                    }
+                                </div>
+                            </div>
+
+                            <!-- Sección 0.1 -->
+                            <div class="mt-auto pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-primary font-bold text-sm border border-blue-200">0.1</span>
+                                    <h4 class="text-sm font-semibold text-gray-700">Ponderación media</h4>
+                                </div>
+                                <div class="flex flex-wrap gap-2 pl-10">
+                                    ${pondera01.length > 0 
+                                        ? pondera01.map(asig => generarPildora(asig, 'media')).join('')
+                                        : '<span class="text-xs text-gray-400 italic">No hay datos para 0.1</span>'
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    card.addEventListener('click', () => openModal(item));
+                    resultsGrid.appendChild(card);
+                });
+            }
+        }
+
+        // --- 5. LOGICA DEL MODAL ---
+        const modal = document.getElementById('infoModal');
+        const modalContent = document.getElementById('modalContent');
+        
+        function openModal(item) {
+            document.getElementById('modalTitle').textContent = `${item.grado}`;
+            const textoCampus = item.campus ? ` • Campus ${item.campus}` : '';
+            
+            let htmlContent = `
+                <div class="mb-4">
+                    <p class="text-sm text-primary font-semibold">${item.universidad}</p>
+                    <p class="text-xs text-gray-500">${item.rama} • ${item.region}${textoCampus}</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                    <h4 class="font-semibold text-gray-700 mb-3 border-b pb-2">Tabla completa de ponderaciones</h4>
+                    <table class="w-full text-sm text-left">
+                        <thead class="text-xs text-gray-500 uppercase bg-gray-100">
+                            <tr>
+                                <th class="px-3 py-2 rounded-l-lg">Asignatura</th>
+                                <th class="px-3 py-2 rounded-r-lg w-20 text-center">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${item.asignaturas.sort((a,b) => b.valor - a.valor).map(a => `
+                                <tr class="border-b border-gray-100 last:border-0 hover:bg-gray-100 transition-colors">
+                                    <td class="px-3 py-2 font-medium text-gray-800">${a.nombre}</td>
+                                    <td class="px-3 py-2 text-center font-bold ${a.valor === 0.2 ? 'text-green-600' : 'text-primary'}">${a.valor}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-xs text-gray-400 mt-4 text-center">Revisa siempre la información oficial de la universidad correspondiente.</p>
+            `;
+            
+            document.getElementById('modalBody').innerHTML = htmlContent;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // Iniciar la app al cargar
+        window.addEventListener('DOMContentLoaded', cargarDatosReales);
+
+    </script>
+</body>
+</html>

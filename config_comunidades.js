@@ -6,7 +6,7 @@ const archivosComunidades = [
     // "cataluna.js",
 	"aragon_ponderaciones.js",
 	 "cantabria_ponderaciones.js",
-	// "castilla-y-leon.js",	
+	"castilla-leon_ponderaciones.js",	
 	"castilla-la-mancha_ponderaciones.js",
 	// "navarra.js",
 	// "galicia.js",

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Ponderaciones EvAU/EBAU</title>
+    <title>Ponderaciones PAU/EvAU/EBAU</title>
     
     <!-- Importar fuente Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,11 +54,11 @@
 </head>
 <body class="text-gray-800">
 
-     <!-- Navbar -->
+    <!-- Navbar original con logo -->
     <header class="bg-gradient-to-r from-secondary to-primary shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="https://www.academiam25.com/wp-content/uploads/2025/06/2-logos.png" alt="Logo Academia M25" class="h-16 md:h-20 object-contain bg-white rounded-md p-1 shadow-sm">
+                <img src="https://www.academiam25.com/wp-content/uploads/2025/06/2-logos.png" alt="Logo Academia M25" class="h-10 md:h-12 object-contain bg-white rounded-md p-1 shadow-sm">
                 <h1 class="text-2xl font-bold text-white tracking-wide hidden sm:block">Pondera<span class="text-accent">Test</span></h1>
             </div>
             <div class="hidden md:block">
@@ -143,9 +143,19 @@
             </div>
         </div>
 
+        <!-- Paginación Superior (Numérica) -->
+        <div id="paginationControlsTop" class="hidden mb-6 justify-center items-center gap-2 flex-wrap">
+            <!-- Botones generados en JS -->
+        </div>
+
         <!-- Resultados Grid -->
         <div id="resultsGrid" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             <!-- Las tarjetas se insertarán aquí dinámicamente -->
+        </div>
+        
+        <!-- Paginación Inferior (Numérica) -->
+        <div id="paginationControlsBottom" class="hidden mt-8 justify-center items-center gap-2 flex-wrap">
+            <!-- Botones generados en JS -->
         </div>
         
         <!-- Estado de carga / Sin resultados -->
@@ -181,6 +191,9 @@
     <script>
         // --- 1. VARIABLES GLOBALES ---
         let allData = [];
+        let filteredData = [];
+        let currentPage = 1;
+        const itemsPerPage = 9;
         
         // Elementos del DOM
         const searchInput = document.getElementById('searchInput');
@@ -194,6 +207,10 @@
         const statusMessage = document.getElementById('statusMessage');
         const resetBtn = document.getElementById('resetBtn');
         const loadedRegionsText = document.getElementById('loadedRegionsText');
+
+        // Elementos de paginación
+        const paginationControlsTop = document.getElementById('paginationControlsTop');
+        const paginationControlsBottom = document.getElementById('paginationControlsBottom');
 
         // --- 2. CARGA DE DATOS DINÁMICA ---
         async function cargarDatosReales() {
@@ -358,7 +375,7 @@
             const univ = universidadFilter.value;
             const campus = campusFilter.value;
 
-            let filtrados = allData.filter(item => {
+            filteredData = allData.filter(item => {
                 // Filtro texto
                 const matchText = item.grado.toLowerCase().includes(query);
                 // Filtro Región/Univ/Campus
@@ -377,14 +394,15 @@
 
             // ORDENAR: Si se ha seleccionado una asignatura, ordenar resultados para que aparezcan primero las de 0.2
             if (asigSelect !== "") {
-                filtrados.sort((a, b) => {
+                filteredData.sort((a, b) => {
                     const valA = a.asignaturas.find(as => as.nombre === asigSelect)?.valor || 0;
                     const valB = b.asignaturas.find(as => as.nombre === asigSelect)?.valor || 0;
                     return valB - valA; // Descendente: 0.2 antes que 0.1
                 });
             }
 
-            renderResults(filtrados, asigSelect);
+            currentPage = 1;
+            renderCurrentPage(asigSelect);
         }
 
         function resetFiltros() {
@@ -397,12 +415,91 @@
             filtrarDatos();
         }
 
+        // --- FUNCIONES DE PAGINACIÓN ---
+        function renderCurrentPage(asignaturaDestacada = "") {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageData = filteredData.slice(startIndex, endIndex);
+
+            renderResults(pageData, asignaturaDestacada);
+            updatePaginationControls();
+        }
+
+        function updatePaginationControls() {
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+            if (totalPages <= 1) {
+                paginationControlsTop.classList.add('hidden');
+                paginationControlsTop.classList.remove('flex');
+                paginationControlsBottom.classList.add('hidden');
+                paginationControlsBottom.classList.remove('flex');
+            } else {
+                paginationControlsTop.classList.remove('hidden');
+                paginationControlsTop.classList.add('flex');
+                paginationControlsBottom.classList.remove('hidden');
+                paginationControlsBottom.classList.add('flex');
+                
+                const html = generatePaginationHTML(currentPage, totalPages);
+                paginationControlsTop.innerHTML = html;
+                paginationControlsBottom.innerHTML = html;
+            }
+        }
+
+        function generatePaginationHTML(current, total) {
+            let buttons = [];
+            
+            // Botón Anterior
+            const prevDisabled = current === 1 ? 'disabled class="px-4 py-2 rounded-lg border border-gray-200 text-gray-400 bg-gray-50 cursor-not-allowed text-sm font-medium"' : `class="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:text-primary text-sm font-medium transition-colors cursor-pointer" onclick="goToPage(${current - 1})"`;
+            buttons.push(`<button ${prevDisabled}>&larr; Anterior</button>`);
+
+            // Lógica de números de página interactivos
+            let startPage = Math.max(1, current - 2);
+            let endPage = Math.min(total, current + 2);
+
+            // Ajustar para siempre mostrar 5 números si hay suficientes páginas
+            if (current <= 3) endPage = Math.min(total, 5);
+            if (current >= total - 2) startPage = Math.max(1, total - 4);
+
+            if (startPage > 1) {
+                buttons.push(`<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:text-primary text-sm font-medium transition-colors cursor-pointer" onclick="goToPage(1)">1</button>`);
+                if (startPage > 2) buttons.push(`<span class="px-2 text-gray-400">...</span>`);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                if (i === current) {
+                    buttons.push(`<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-primary text-white bg-primary text-sm font-bold shadow-sm cursor-default">${i}</button>`);
+                } else {
+                    buttons.push(`<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:text-primary text-sm font-medium transition-colors cursor-pointer" onclick="goToPage(${i})">${i}</button>`);
+                }
+            }
+
+            if (endPage < total) {
+                if (endPage < total - 1) buttons.push(`<span class="px-2 text-gray-400">...</span>`);
+                buttons.push(`<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:text-primary text-sm font-medium transition-colors cursor-pointer" onclick="goToPage(${total})">${total}</button>`);
+            }
+
+            // Botón Siguiente
+            const nextDisabled = current === total ? 'disabled class="px-4 py-2 rounded-lg border border-gray-200 text-gray-400 bg-gray-50 cursor-not-allowed text-sm font-medium"' : `class="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:text-primary text-sm font-medium transition-colors cursor-pointer" onclick="goToPage(${current + 1})"`;
+            buttons.push(`<button ${nextDisabled}>Siguiente &rarr;</button>`);
+
+            return buttons.join('');
+        }
+
+        window.goToPage = function(pageNumber) {
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            if (pageNumber >= 1 && pageNumber <= totalPages) {
+                currentPage = pageNumber;
+                renderCurrentPage(document.getElementById('asignaturaFilter').value);
+                window.scrollTo({ top: document.getElementById('resultsGrid').offsetTop - 150, behavior: 'smooth' });
+            }
+        };
+
         // --- 4. RENDERIZADO ---
         function renderResults(datos, asignaturaDestacada = "") {
             resultsGrid.innerHTML = '';
-            resultsCount.textContent = datos.length;
+            resultsCount.textContent = filteredData.length;
 
-            if (datos.length === 0) {
+            if (filteredData.length === 0) {
                 statusMessage.classList.remove('hidden');
             } else {
                 statusMessage.classList.add('hidden');

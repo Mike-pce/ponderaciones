@@ -1,7 +1,7 @@
 // config_comunidades.js
 const archivosComunidades = [
     // "madrid.js",
-    // "andalucia.js",
+    "andalucia_ponderaciones.js",
     // "valencia.js",
     // "cataluna.js",
 	"aragon_ponderaciones.js",

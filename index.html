@@ -52,14 +52,12 @@
         }
     </style>
 </head>
-<!-- ========== SCRIPT PARA ENVIAR ALTURA AL PADRE (OPTIMIZADO) ========== -->
+<!-- ========== SCRIPT PARA ENVIAR ALTURA (SIN BUCLES) ========== -->
 <script>
 (function() {
-  let lastHeight = 0;
-  let sendTimeout;
+  let lastSentHeight = 0;
   
   function sendHeightToParent() {
-    // Calcular altura real
     const height = Math.max(
       document.body.scrollHeight,
       document.documentElement.scrollHeight,
@@ -67,57 +65,37 @@
       document.documentElement.offsetHeight
     );
     
-    // Evitar enviar si no ha cambiado significativamente
-    if (Math.abs(height - lastHeight) < 5) return;
+    // Solo enviar si cambió más de 10px
+    if (Math.abs(height - lastSentHeight) < 10) return;
     
-    // Clear pending sends
-    clearTimeout(sendTimeout);
+    lastSentHeight = height;
     
-    // Debounce: esperar 150ms antes de enviar
-    sendTimeout = setTimeout(function() {
-      lastHeight = height;
-      
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({
-          type: 'resize',
-          height: height
-        }, '*');
-      }
-    }, 150);
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'resize',
+        height: height
+      }, 'https://www.academiam25.com/');
+    }
   }
   
-  // ========== EVENTOS CONTROLADOS (SIN MutationObserver) ==========
+  // ENVIAR SOLO EN ESTOS MOMENTOS (NO en resize):
   
   // 1. Carga inicial
   window.addEventListener('load', function() {
-    setTimeout(sendHeightToParent, 300);
-    setTimeout(sendHeightToParent, 800);
-    setTimeout(sendHeightToParent, 1500);
+    setTimeout(sendHeightToParent, 500);
+    setTimeout(sendHeightToParent, 1000);
   });
   
-  // 2. Resize de ventana
-  let resizeTimeout;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(sendHeightToParent, 250);
-  });
+  // 2. SOLO cuando cambie contenido REAL (búsquedas, filtros)
+  // Añade esta línea en TU código JavaScript después de cargar resultados:
+  // sendHeightToParent();
   
-  // 3. Si tu app tiene eventos personalizados para búsqueda/filtros:
-  // Descomenta y usa estos eventos en lugar de MutationObserver
+  // Ejemplo: si tienes una función que muestra resultados:
   /*
-  document.addEventListener('searchResultsLoaded', sendHeightToParent);
-  document.addEventListener('filtersApplied', sendHeightToParent);
-  document.addEventListener('contentUpdated', sendHeightToParent);
-  */
-  
-  // 4. Si usas JavaScript para cargar contenido dinámico,
-  // llama manualmente a sendHeightToParent() después de cargar:
-  // Ejemplo:
-  /*
-  fetch('/api/data').then(response => {
-    // ... procesar datos ...
-    sendHeightToParent(); // ← Llamar después de actualizar el DOM
-  });
+  function mostrarResultados(datos) {
+    // ... tu código para mostrar ...
+    sendHeightToParent(); // ← AÑADIR ESTO
+  }
   */
   
 })();

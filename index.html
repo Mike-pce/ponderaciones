@@ -52,6 +52,62 @@
         }
     </style>
 </head>
+<!-- ========== SCRIPT PARA ENVIAR ALTURA AL PADRE (postMessage) ========== -->
+<script>
+(function() {
+  // Función para calcular y enviar la altura real del contenido
+  function sendHeightToParent() {
+    // Calcular altura real del documento
+    const height = Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight
+    );
+    
+    // Enviar al padre vía postMessage
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'resize',
+        height: height
+      }, '*'); // 🔐 En producción, cambia '*' por la URL de tu WordPress
+    }
+  }
+  
+  // Enviar altura en múltiples momentos clave:
+  
+  // 1. Al cargar inicialmente
+  window.addEventListener('load', sendHeightToParent);
+  
+  // 2. Cuando cambie el tamaño de la ventana
+  window.addEventListener('resize', sendHeightToParent);
+  
+  // 3. Cuando haya mutaciones en el DOM (resultados de búsqueda, filtros, etc.)
+  if ('MutationObserver' in window) {
+    const observer = new MutationObserver(sendHeightToParent);
+    observer.observe(document.body, { 
+      childList: true, 
+      subtree: true,
+      attributes: true,
+      characterData: true
+    });
+  }
+  
+  // 4. Después de eventos comunes en apps dinámicas
+  document.addEventListener('DOMContentLoaded', sendHeightToParent);
+  setTimeout(sendHeightToParent, 500);   // Para contenido que cargue con delay
+  setTimeout(sendHeightToParent, 1500);  // Para APIs o datos asíncronos
+  
+  // 5. Si tu app usa eventos personalizados para resultados de búsqueda:
+  document.addEventListener('searchResultsLoaded', sendHeightToParent);
+  document.addEventListener('filtersApplied', sendHeightToParent);
+  
+  // 6. Si usas frameworks como React/Vue, puedes llamar a sendHeightToParent()
+  //    después de que se rendericen los resultados
+})();
+</script>
 <body class="text-gray-800">
 
     <!-- Navbar original con logo -->

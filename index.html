@@ -52,60 +52,74 @@
         }
     </style>
 </head>
-<!-- ========== SCRIPT PARA ENVIAR ALTURA AL PADRE (postMessage) ========== -->
+<!-- ========== SCRIPT PARA ENVIAR ALTURA AL PADRE (OPTIMIZADO) ========== -->
 <script>
 (function() {
-  // Función para calcular y enviar la altura real del contenido
+  let lastHeight = 0;
+  let sendTimeout;
+  
   function sendHeightToParent() {
-    // Calcular altura real del documento
+    // Calcular altura real
     const height = Math.max(
       document.body.scrollHeight,
       document.documentElement.scrollHeight,
       document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.body.clientHeight,
-      document.documentElement.clientHeight
+      document.documentElement.offsetHeight
     );
     
-    // Enviar al padre vía postMessage
-    if (window.parent && window.parent !== window) {
-      window.parent.postMessage({
-        type: 'resize',
-        height: height
-      }, 'https://www.academiam25.com/'); // 🔐 En producción, cambia '*' por la URL de tu WordPress
-    }
+    // Evitar enviar si no ha cambiado significativamente
+    if (Math.abs(height - lastHeight) < 5) return;
+    
+    // Clear pending sends
+    clearTimeout(sendTimeout);
+    
+    // Debounce: esperar 150ms antes de enviar
+    sendTimeout = setTimeout(function() {
+      lastHeight = height;
+      
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: 'resize',
+          height: height
+        }, '*');
+      }
+    }, 150);
   }
   
-  // Enviar altura en múltiples momentos clave:
+  // ========== EVENTOS CONTROLADOS (SIN MutationObserver) ==========
   
-  // 1. Al cargar inicialmente
-  window.addEventListener('load', sendHeightToParent);
+  // 1. Carga inicial
+  window.addEventListener('load', function() {
+    setTimeout(sendHeightToParent, 300);
+    setTimeout(sendHeightToParent, 800);
+    setTimeout(sendHeightToParent, 1500);
+  });
   
-  // 2. Cuando cambie el tamaño de la ventana
-  window.addEventListener('resize', sendHeightToParent);
+  // 2. Resize de ventana
+  let resizeTimeout;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(sendHeightToParent, 250);
+  });
   
-  // 3. Cuando haya mutaciones en el DOM (resultados de búsqueda, filtros, etc.)
-  if ('MutationObserver' in window) {
-    const observer = new MutationObserver(sendHeightToParent);
-    observer.observe(document.body, { 
-      childList: true, 
-      subtree: true,
-      attributes: true,
-      characterData: true
-    });
-  }
-  
-  // 4. Después de eventos comunes en apps dinámicas
-  document.addEventListener('DOMContentLoaded', sendHeightToParent);
-  setTimeout(sendHeightToParent, 500);   // Para contenido que cargue con delay
-  setTimeout(sendHeightToParent, 1500);  // Para APIs o datos asíncronos
-  
-  // 5. Si tu app usa eventos personalizados para resultados de búsqueda:
+  // 3. Si tu app tiene eventos personalizados para búsqueda/filtros:
+  // Descomenta y usa estos eventos en lugar de MutationObserver
+  /*
   document.addEventListener('searchResultsLoaded', sendHeightToParent);
   document.addEventListener('filtersApplied', sendHeightToParent);
+  document.addEventListener('contentUpdated', sendHeightToParent);
+  */
   
-  // 6. Si usas frameworks como React/Vue, puedes llamar a sendHeightToParent()
-  //    después de que se rendericen los resultados
+  // 4. Si usas JavaScript para cargar contenido dinámico,
+  // llama manualmente a sendHeightToParent() después de cargar:
+  // Ejemplo:
+  /*
+  fetch('/api/data').then(response => {
+    // ... procesar datos ...
+    sendHeightToParent(); // ← Llamar después de actualizar el DOM
+  });
+  */
+  
 })();
 </script>
 <body class="text-gray-800">

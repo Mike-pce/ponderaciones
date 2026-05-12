@@ -10,12 +10,12 @@ const archivosComunidades = [
 	"castilla-la-mancha_ponderaciones.js",
 	"navarra_ponderaciones.js",
 	// "galicia.js",
-	// "baleares.js",
+	"baleares_ponderaciones.js",
 	"canarias_ponderaciones.js",
 	// "La-Rioja.js",
 	// "pais-vasco.js",
 	// "asturias.js",
 	// "murcia.js",
-	// "extremadura.js",
+	"extremadura_ponderaciones.js",
     // "galicia.js"
 ];

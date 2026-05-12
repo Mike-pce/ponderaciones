@@ -52,54 +52,6 @@
         }
     </style>
 </head>
-<!-- ========== SCRIPT PARA ENVIAR ALTURA (SIN BUCLES) ========== -->
-<script>
-(function() {
-  let lastSentHeight = 0;
-  
-  function sendHeightToParent() {
-    const height = Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight
-    );
-    
-    // Solo enviar si cambió más de 10px
-    if (Math.abs(height - lastSentHeight) < 10) return;
-    
-    lastSentHeight = height;
-    
-    if (window.parent && window.parent !== window) {
-      window.parent.postMessage({
-        type: 'resize',
-        height: height
-      }, 'https://www.academiam25.com/');
-    }
-  }
-  
-  // ENVIAR SOLO EN ESTOS MOMENTOS (NO en resize):
-  
-  // 1. Carga inicial
-  window.addEventListener('load', function() {
-    setTimeout(sendHeightToParent, 500);
-    setTimeout(sendHeightToParent, 1000);
-  });
-  
-  // 2. SOLO cuando cambie contenido REAL (búsquedas, filtros)
-  // Añade esta línea en TU código JavaScript después de cargar resultados:
-  // sendHeightToParent();
-  
-  // Ejemplo: si tienes una función que muestra resultados:
-  /*
-  function mostrarResultados(datos) {
-    // ... tu código para mostrar ...
-    sendHeightToParent(); // ← AÑADIR ESTO
-  }
-  */
-  
-})();
-</script>
 <body class="text-gray-800">
 
     <!-- Navbar original con logo -->
@@ -260,6 +212,100 @@
         const paginationControlsTop = document.getElementById('paginationControlsTop');
         const paginationControlsBottom = document.getElementById('paginationControlsBottom');
 
+        // Unifica variantes de escritura sin mezclar asignaturas distintas.
+        // Importante: se conserva II, porque Matemáticas II no es lo mismo que Matemáticas.
+        const nombresAsignaturasCanonicos = {
+            "analisis musical": "Análisis Musical",
+            "analisis musical ii": "Análisis Musical II",
+            "artes escenicas": "Artes Escénicas",
+            "artes escenicas ii": "Artes Escénicas II",
+            "biologia": "Biología",
+            "biologia ii": "Biología II",
+            "ciencias de la tierra y del medio ambiente": "Ciencias de la Tierra y del Medio Ambiente",
+            "ciencias generales": "Ciencias Generales",
+            "cultura audiovisual": "Cultura Audiovisual",
+            "cultura audiovisual ii": "Cultura Audiovisual II",
+            "dibujo artistico": "Dibujo Artístico",
+            "dibujo artistico ii": "Dibujo Artístico II",
+            "dibujo tecnico": "Dibujo Técnico",
+            "dibujo tecnico ii": "Dibujo Técnico II",
+            "dibujo tecnico aplicado a las artes plasticas y el diseno": "Dibujo Técnico Aplicado a las Artes Plásticas y el Diseño",
+            "dibujo tecnico aplicado a las artes plasticas y el diseno ii": "Dibujo Técnico Aplicado a las Artes Plásticas y el Diseño II",
+            "coro y tecnica vocal ii": "Coro y Técnica Vocal II",
+            "diseno": "Diseño",
+            "economia": "Economía",
+            "economia de la empresa": "Economía de la Empresa",
+            "empresa y diseno de modelos de negocio": "Empresa y Diseño de Modelos de Negocio",
+            "fisica": "Física",
+            "fundamentos artisticos": "Fundamentos Artísticos",
+            "fundamentos del arte ii": "Fundamentos del Arte II",
+            "geografia": "Geografía",
+            "geologia": "Geología",
+            "geologia y ciencias ambientales": "Geología y Ciencias Ambientales",
+            "griego ii": "Griego II",
+            "historia de espana": "Historia de España",
+            "historia de la filosofia": "Historia de la Filosofía",
+            "historia de la musica y de la danza": "Historia de la Música y de la Danza",
+            "historia del arte": "Historia del Arte",
+            "latin ii": "Latín II",
+            "lengua extranjera ii": "Lengua Extranjera II",
+            "literatura dramatica": "Literatura Dramática",
+            "matematicas": "Matemáticas",
+            "matematicas ii": "Matemáticas II",
+            "matematicas aplicadas a las ciencias sociales": "Matemáticas Aplicadas a las Ciencias Sociales",
+            "matematicas aplicadas a las ciencias sociales ii": "Matemáticas Aplicadas a las Ciencias Sociales II",
+            "quimica": "Química",
+            "tecnicas de expresion grafico plastica": "Técnicas de Expresión Gráfico-Plástica",
+            "tecnologia e ingenieria": "Tecnología e Ingeniería",
+            "tecnologia e ingenieria ii": "Tecnología e Ingeniería II",
+            "tecnologia industrial ii": "Tecnología Industrial II"
+        };
+
+        const aliasAsignaturas = {
+            "hist arte": "historia del arte",
+            "hist musica": "historia de la musica y de la danza",
+            "historia espana": "historia de espana",
+            "lit dramatica": "literatura dramatica",
+            "mat ii": "matematicas ii",
+            "mat ccss": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas ccss": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas a las ccss ii": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas a las cc ss ii": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas a las ccss": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas a las cc ss": "matematicas aplicadas a las ciencias sociales ii",
+            "matematicas aplicadas ccss ii": "matematicas aplicadas a las ciencias sociales ii",
+            "mov culturales": "movimientos culturales y artisticos",
+            "ciencias gral": "ciencias generales",
+            "ciencies generals ciencias generales": "ciencias generales",
+            "coro y tecnica vocal": "coro y tecnica vocal ii",
+            "dib tec art": "dibujo tecnico aplicado a las artes plasticas y el diseno ii",
+            "dibujo tecnico aplicado a las artes plasticas y al diseno ii": "dibujo tecnico aplicado a las artes plasticas y el diseno ii",
+            "dibujo tecnico aplicado a las artes plasticas y el diseno": "dibujo tecnico aplicado a las artes plasticas y el diseno ii",
+            "empresa": "empresa y diseno de modelos de negocio",
+            "empresa y diseno de modelo de negocio": "empresa y diseno de modelos de negocio",
+            "empresa y diseno de modelos": "empresa y diseno de modelos de negocio",
+            "fundamentos artisticos fundamentos de las artes": "fundamentos artisticos",
+            "tec expresion": "tecnicas de expresion grafico plastica"
+        };
+
+        function normalizarAsignatura(nombre) {
+            const clave = String(nombre || "")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, " ")
+                .trim()
+                .replace(/\s+/g, " ");
+
+            return aliasAsignaturas[clave] || clave;
+        }
+
+        function nombreAsignaturaCanonico(nombre) {
+            const clave = normalizarAsignatura(nombre);
+            return nombresAsignaturasCanonicos[clave] || String(nombre || "").trim();
+        }
+
         // --- 2. CARGA DE DATOS DINÁMICA ---
         async function cargarDatosReales() {
             let archivos = [];
@@ -350,16 +396,23 @@
             });
 
             // 2. Obtener todas las asignaturas únicas
-            const asignaturasSet = new Set();
+            const asignaturasMap = new Map();
             allData.forEach(item => {
-                item.asignaturas.forEach(a => asignaturasSet.add(a.nombre));
+                item.asignaturas.forEach(a => {
+                    const clave = normalizarAsignatura(a.nombre);
+                    const nombreCanonico = nombreAsignaturaCanonico(a.nombre);
+                    if (clave && !asignaturasMap.has(clave)) {
+                        asignaturasMap.set(clave, nombreCanonico);
+                    }
+                });
             });
-            const asignaturasUnicas = [...asignaturasSet].sort();
+            const asignaturasUnicas = [...asignaturasMap.entries()]
+                .sort((a, b) => a[1].localeCompare(b[1], 'es'));
             
-            asignaturasUnicas.forEach(asig => {
+            asignaturasUnicas.forEach(([clave, nombre]) => {
                 const option = document.createElement('option');
-                option.value = asig;
-                option.textContent = asig;
+                option.value = clave;
+                option.textContent = nombre;
                 asignaturaFilter.appendChild(option);
             });
         }
@@ -435,7 +488,7 @@
                 const matchRama = rama === "" || item.rama === rama;
                 
                 // Filtro Asignatura: Si hay una asignatura seleccionada, la carrera DEBE tenerla con valor > 0
-                const matchAsig = asigSelect === "" || item.asignaturas.some(a => a.nombre === asigSelect);
+                const matchAsig = asigSelect === "" || item.asignaturas.some(a => normalizarAsignatura(a.nombre) === asigSelect);
 
                 return matchText && matchRegion && matchUniv && matchCampus && matchRama && matchAsig;
             });
@@ -562,13 +615,14 @@
 
                     // Función para generar las píldoras de asignaturas (resaltando si es necesario)
                     const generarPildora = (asig, tipo) => {
-                        const esDestacada = asig.nombre === asignaturaDestacada;
+                        const nombreVisible = nombreAsignaturaCanonico(asig.nombre);
+                        const esDestacada = normalizarAsignatura(asig.nombre) === asignaturaDestacada;
                         if (tipo === 'alta') {
-                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${asig.nombre} (0.2)</span>`;
-                            return `<span class="inline-block bg-green-50 border border-green-200 text-green-800 text-xs px-2.5 py-1 rounded-md shadow-sm">${asig.nombre}</span>`;
+                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${nombreVisible} (0.2)</span>`;
+                            return `<span class="inline-block bg-green-50 border border-green-200 text-green-800 text-xs px-2.5 py-1 rounded-md shadow-sm">${nombreVisible}</span>`;
                         } else {
-                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${asig.nombre} (0.1)</span>`;
-                            return `<span class="inline-block bg-blue-50 border border-blue-200 text-secondary text-xs px-2.5 py-1 rounded-md shadow-sm">${asig.nombre}</span>`;
+                            if (esDestacada) return `<span class="inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 font-bold text-xs px-2.5 py-1 rounded-md shadow-sm ring-2 ring-yellow-400 ring-offset-1">${nombreVisible} (0.1)</span>`;
+                            return `<span class="inline-block bg-blue-50 border border-blue-200 text-secondary text-xs px-2.5 py-1 rounded-md shadow-sm">${nombreVisible}</span>`;
                         }
                     };
 
@@ -651,7 +705,7 @@
                         <tbody>
                             ${item.asignaturas.sort((a,b) => b.valor - a.valor).map(a => `
                                 <tr class="border-b border-gray-100 last:border-0 hover:bg-gray-100 transition-colors">
-                                    <td class="px-3 py-2 font-medium text-gray-800">${a.nombre}</td>
+                                    <td class="px-3 py-2 font-medium text-gray-800">${nombreAsignaturaCanonico(a.nombre)}</td>
                                     <td class="px-3 py-2 text-center font-bold ${a.valor === 0.2 ? 'text-green-600' : 'text-primary'}">${a.valor}</td>
                                 </tr>
                             `).join('')}

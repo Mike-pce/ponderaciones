@@ -14,8 +14,8 @@ const archivosComunidades = [
 	"canarias_ponderaciones.js",
 	"rioja_ponderaciones.js",
 	"pais-vasco_ponderaciones.js",
-	// "asturias.js",
+	"asturias_ponderaciones.js",
 	// "murcia.js",
 	"extremadura_ponderaciones.js",
-    // "galicia.js"
+    
 ];

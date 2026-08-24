@@ -461,31 +461,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -818,40 +818,40 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Griego",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -908,31 +908,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -1051,27 +1051,7 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
                 "valor": 0.2
             },
             {
@@ -1079,11 +1059,31 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Diseño",
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -1694,27 +1694,19 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Dibujo artístico",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Dibujo técnico",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Diseño",
                 "valor": 0.2
             },
             {
@@ -1727,22 +1719,30 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Economía de la empresa",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Diseño",
                 "valor": 0.1
             },
             {
                 "nombre": "Geografía",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.1
             }
         ]
@@ -1853,32 +1853,12 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.1
+                "nombre": "Dibujo técnico",
+                "valor": 0.2
             },
             {
                 "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
@@ -1890,7 +1870,35 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
             }
         ]
     },
@@ -1902,32 +1910,12 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.1
+                "nombre": "Dibujo técnico",
+                "valor": 0.2
             },
             {
                 "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
@@ -1939,7 +1927,35 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
             }
         ]
     },
@@ -1959,14 +1975,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
                 "valor": 0.2
             },
@@ -1975,23 +1983,31 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Literatura dramática",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
                 "valor": 0.2
             }
         ]
@@ -2853,36 +2869,40 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
                 "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
                 "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -3218,32 +3238,32 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Análisis musical",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -3292,32 +3312,32 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Análisis musical",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -3451,31 +3471,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -3901,14 +3921,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
                 "valor": 0.2
             },
@@ -3937,19 +3949,27 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Economía de la empresa",
+                "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Geografía",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             },
             {
-                "nombre": "Historia de la música y de la danza",
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.1
             }
         ]
@@ -3970,14 +3990,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
                 "valor": 0.2
             },
@@ -4006,19 +4018,27 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Economía de la empresa",
+                "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Geografía",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             },
             {
-                "nombre": "Historia de la música y de la danza",
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.1
             }
         ]
@@ -4140,10 +4160,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
@@ -4156,10 +4172,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
                 "valor": 0.2
             },
@@ -4168,27 +4180,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.2
             },
             {
-                "nombre": "Economía de la empresa",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Geografía",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
                 "valor": 0.2
             },
             {
@@ -4197,6 +4193,30 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Literatura castellana",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Literatura catalana",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -4564,27 +4584,27 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             }
         ]
@@ -4667,32 +4687,32 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -4737,35 +4757,11 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Análisis musical",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.1
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
                 "valor": 0.1
             },
             {
@@ -4774,6 +4770,30 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Física",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
                 "valor": 0.1
             }
         ]
@@ -5682,23 +5702,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -5920,28 +5940,28 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
+                "nombre": "Geografía",
                 "valor": 0.1
             },
             {
-                "nombre": "Biología",
+                "nombre": "Griego",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -6154,40 +6174,40 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Griego",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -6363,32 +6383,32 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Análisis musical",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -6437,32 +6457,32 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             }
         ]
     },
@@ -6805,31 +6825,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -6879,31 +6899,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -6998,24 +7018,24 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
+                "nombre": "Análisis musical",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
+                "nombre": "Coro y técnica vocal",
+                "valor": 0.1
             },
             {
                 "nombre": "Física",
@@ -7034,32 +7054,32 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -7374,27 +7394,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Física",
                 "valor": 0.2
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
@@ -7431,6 +7435,22 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -8211,27 +8231,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Física",
                 "valor": 0.2
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
@@ -8268,6 +8272,22 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -8862,27 +8882,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Física",
                 "valor": 0.2
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
@@ -8919,6 +8923,22 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -9606,27 +9626,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Física",
                 "valor": 0.2
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
@@ -9663,6 +9667,22 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -9971,36 +9991,16 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Coro y técnica vocal",
                 "valor": 0.2
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Economía de la empresa",
@@ -10011,12 +10011,32 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
+                "nombre": "Historia de la música y de la danza",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Literatura dramática",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -10408,36 +10428,36 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
                 "valor": 0.1
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
             }
         ]
     },
@@ -10618,27 +10638,27 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Geología y ciencias ambientales",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -11818,23 +11838,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Química",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -11876,23 +11896,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Química",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -12079,23 +12099,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Química",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -12589,27 +12609,7 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
                 "valor": 0.2
             },
             {
@@ -12617,11 +12617,31 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Diseño",
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -13070,36 +13090,36 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
                 "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Economía de la empresa",
                 "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
             }
         ]
     },
@@ -13644,23 +13664,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Química",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -14015,23 +14035,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Química",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -14801,47 +14821,7 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geografía",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Análisis musical",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
-            },
-            {
                 "nombre": "Biología",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Coro y técnica vocal",
                 "valor": 0.1
             },
             {
@@ -14849,7 +14829,15 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.1
             },
             {
+                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "valor": 0.1
+            },
+            {
                 "nombre": "Diseño",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Física",
                 "valor": 0.1
             },
             {
@@ -14858,14 +14846,46 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
                 "valor": 0.1
             },
             {
                 "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
                 "valor": 0.1
             },
             {
-                "nombre": "Literatura castellana",
+                "nombre": "Latín",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
                 "valor": 0.1
             }
         ]
@@ -14955,46 +14975,6 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia del arte",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Literatura castellana",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Literatura catalana",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Literatura dramática",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Análisis musical",
                 "valor": 0.1
             },
@@ -15007,15 +14987,11 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
             },
             {
                 "nombre": "Dibujo artístico",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo técnico",
                 "valor": 0.1
             },
             {
@@ -15027,15 +15003,55 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.1
             },
             {
-                "nombre": "Geografía",
+                "nombre": "Física",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
                 "nombre": "Griego",
-                "valor": 0.1
+                "valor": 0.2
             },
             {
                 "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
                 "valor": 0.1
             }
         ]
@@ -15278,23 +15294,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Literatura castellana",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Literatura catalana",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Literatura dramática",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Latín",
                 "valor": 0.2
             }
         ]
@@ -15336,23 +15352,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Literatura castellana",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Literatura catalana",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Literatura dramática",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Latín",
                 "valor": 0.2
             }
         ]
@@ -15514,23 +15530,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Literatura castellana",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Literatura catalana",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Literatura dramática",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Latín",
                 "valor": 0.2
             }
         ]
@@ -15543,23 +15559,23 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Literatura castellana",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Literatura catalana",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Literatura dramática",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Latín",
                 "valor": 0.2
             }
         ]
@@ -15695,26 +15711,6 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Análisis musical",
                 "valor": 0.1
             },
@@ -15723,12 +15719,32 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.1
             },
             {
-                "nombre": "Biología",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.1
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Coro y técnica vocal",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -15740,24 +15756,24 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
+                "nombre": "Análisis musical",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
+                "nombre": "Coro y técnica vocal",
+                "valor": 0.1
             },
             {
                 "nombre": "Física",
@@ -15776,32 +15792,32 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -15987,19 +16003,19 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             }
         ]
@@ -16517,25 +16533,66 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Biología",
+                "valor": 0.1
             },
             {
                 "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Economía de la empresa",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Geografía",
                 "valor": 0.2
             },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.1
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Geografia. Territori i Medi Ambient / Turisme (simultaneïtat)",
+        "rama": "Ciencias Sociales y Jurídicas",
+        "asignaturas": [
             {
                 "nombre": "Análisis musical",
                 "valor": 0.1
@@ -16550,51 +16607,14 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Geografía",
-                "valor": 0.1
-            }
-        ]
-    },
-    {
-        "region": "Cataluña",
-        "universidad": "UdG",
-        "campus": "Girona",
-        "grado": "Grado en Geografia. Territori i Medi Ambient / Turisme (simultaneïtat)",
-        "rama": "Ciencias Sociales y Jurídicas",
-        "asignaturas": [
-            {
-                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
+                "nombre": "Dibujo artístico",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.2
             },
             {
@@ -16611,39 +16631,31 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Literatura castellana",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.1
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.1
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -17411,28 +17423,28 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
+                "nombre": "Geografía",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -17534,36 +17546,36 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -17681,36 +17693,36 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -17779,36 +17791,36 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Coro y técnica vocal",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -18408,19 +18420,19 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -18658,27 +18670,27 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ingeniería y Arquitectura",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
                 "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
+                "nombre": "Física",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Geología y ciencias ambientales",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
                 "valor": 0.2
             }
         ]
@@ -19172,15 +19184,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             }
         ]
@@ -19235,15 +19247,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
+                "nombre": "Matemáticas",
                 "valor": 0.2
             },
             {
-                "nombre": "Biología",
+                "nombre": "Matemáticas aplicadas a las ccss",
                 "valor": 0.2
             }
         ]
@@ -19298,31 +19310,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Artes escénicas",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
@@ -19338,16 +19334,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -19999,15 +20007,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.2
             }
         ]
@@ -20131,8 +20139,16 @@ const datos_catalunya_ponderaciones = [
         "rama": "Artes y Humanidades",
         "asignaturas": [
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Coro y técnica vocal",
+                "valor": 0.1
             },
             {
                 "nombre": "Dibujo artístico",
@@ -20140,7 +20156,7 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Dibujo técnico",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
@@ -20148,10 +20164,6 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
                 "valor": 0.2
             },
             {
@@ -20163,24 +20175,20 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geografía",
+                "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
             }
         ]
     },
@@ -20602,20 +20610,20 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
             }
         ]
     },
@@ -20911,34 +20919,6 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Economía de la empresa",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geografía",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Análisis musical",
                 "valor": 0.1
             },
@@ -20948,19 +20928,47 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "valor": 0.2
             },
             {
                 "nombre": "Coro y técnica vocal",
                 "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Economía de la empresa",
                 "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
                 "valor": 0.1
+            },
+            {
+                "nombre": "Literatura dramática",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -21534,27 +21542,27 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias de la Salud",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
-            },
-            {
                 "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
                 "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Economía de la empresa",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
                 "valor": 0.1
             }
         ]
@@ -21852,31 +21860,11 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
@@ -21885,10 +21873,6 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
                 "valor": 0.2
             },
             {
@@ -21904,15 +21888,39 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Literatura castellana",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Literatura catalana",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
                 "valor": 0.2
             }
         ]
@@ -22071,19 +22079,19 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
                 "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
@@ -22092,10 +22100,6 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
                 "valor": 0.2
             },
             {
@@ -22111,14 +22115,6 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Historia del arte",
                 "valor": 0.2
             },
@@ -22131,20 +22127,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Literatura dramática",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
             }
         ]
     },
@@ -23366,31 +23370,31 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Análisis musical",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Artes escénicas",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Biología",
-                "valor": 0.2
-            },
-            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Economía de la empresa",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo artístico",
+                "nombre": "Geografía",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
                 "valor": 0.2
             }
         ]
@@ -23745,31 +23749,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Artes escénicas",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
@@ -23785,16 +23773,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -23806,31 +23806,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Artes escénicas",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
@@ -23846,16 +23830,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -23867,31 +23863,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Artes escénicas",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
@@ -23907,16 +23887,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -24001,23 +23993,27 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
+                "nombre": "Análisis musical",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Biología",
+                "valor": 0.1
+            },
+            {
                 "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
+                "nombre": "Dibujo artístico",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
                 "valor": 0.2
             },
             {
@@ -24034,39 +24030,31 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Historia de la música y de la danza",
-                "valor": 0.2
+                "valor": 0.1
             },
             {
                 "nombre": "Historia del arte",
                 "valor": 0.2
             },
             {
-                "nombre": "Literatura castellana",
+                "nombre": "Griego",
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Matemáticas",
+                "valor": 0.2
             },
             {
-                "nombre": "Biología",
-                "valor": 0.1
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Dibujo artístico",
-                "valor": 0.1
-            },
-            {
-                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
-                "valor": 0.1
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -24078,31 +24066,15 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
-                "valor": 0.2
+                "nombre": "Artes escénicas",
+                "valor": 0.1
             },
             {
-                "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
@@ -24118,16 +24090,28 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Análisis musical",
-                "valor": 0.1
+                "nombre": "Historia del arte",
+                "valor": 0.2
             },
             {
-                "nombre": "Artes escénicas",
-                "valor": 0.1
+                "nombre": "Griego",
+                "valor": 0.2
             },
             {
-                "nombre": "Ciències generals / ciencias generales",
-                "valor": 0.1
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
             }
         ]
     },
@@ -24139,19 +24123,19 @@ const datos_catalunya_ponderaciones = [
         "rama": "Ciencias Sociales y Jurídicas",
         "asignaturas": [
             {
-                "nombre": "Biología",
-                "valor": 0.2
+                "nombre": "Análisis musical",
+                "valor": 0.1
             },
             {
-                "nombre": "Coro y técnica vocal",
+                "nombre": "Artes escénicas",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
                 "valor": 0.2
             },
             {
                 "nombre": "Dibujo artístico",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Dibujo técnico",
                 "valor": 0.2
             },
             {
@@ -24160,10 +24144,6 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Diseño",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Física",
                 "valor": 0.2
             },
             {
@@ -24176,14 +24156,6 @@ const datos_catalunya_ponderaciones = [
             },
             {
                 "nombre": "Geografía",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Geología y ciencias ambientales",
-                "valor": 0.2
-            },
-            {
-                "nombre": "Historia de la música y de la danza",
                 "valor": 0.2
             },
             {
@@ -24199,9 +24171,430 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.2
             },
             {
-                "nombre": "Literatura dramática",
+                "nombre": "Griego",
                 "valor": 0.2
             },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Biologia",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Biologia / Biotecnologia (simultaneïtat)",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Biologia / Ciències Ambientals (simultaneïtat)",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Biotecnologia",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Biotecnologia / Biologia (simultaneïtat)",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Ciències Ambientals",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Ciències Ambientals / Biologia (simultaneïtat)",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "EUSES",
+        "grado": "Grado en Ciències de l'Activitat Física i de l'Esport / Fisioteràpia \"EUSES\" (simultaneïtat)",
+        "rama": "Ciencias de la Salud",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Eng. Electrònica, Industrial i Automàtica / Eng. Elèctrica (Simultaneïtat)",
+        "rama": "Ingeniería y Arquitectura",
+        "asignaturas": [
+            {
+                "nombre": "Dibujo técnico",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Enginyeria en Tecnologies Industrials, Grau en + Màster Universitari en Enginyeria Industrial (PARS: Enginyer/a en Tecnologies Industrials)",
+        "rama": "Ingeniería y Arquitectura",
+        "asignaturas": [
+            {
+                "nombre": "Dibujo técnico",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Tecnología e Ingeniería",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "EUSES",
+        "grado": "Grado en Fisioteràpia / Ciències de l'Activitat Física i de l'Esport \"EUSES\" (simultaneïtat)",
+        "rama": "Ciencias de la Salud",
+        "asignaturas": [
+            {
+                "nombre": "Biología",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Historia de la música y de la danza",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Química",
+        "rama": "Ciencias",
+        "asignaturas": [
+            {
+                "nombre": "Física",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.2
+            }
+        ]
+    },
+    {
+        "region": "Cataluña",
+        "universidad": "UdG",
+        "campus": "Girona",
+        "grado": "Grado en Turisme / Estudis Globals / Global Studies (docència en Anglès) (simultaneïtat)",
+        "rama": "Ciencias Sociales y Jurídicas",
+        "asignaturas": [
             {
                 "nombre": "Análisis musical",
                 "valor": 0.1
@@ -24211,7 +24604,75 @@ const datos_catalunya_ponderaciones = [
                 "valor": 0.1
             },
             {
+                "nombre": "Biología",
+                "valor": 0.1
+            },
+            {
                 "nombre": "Ciències generals / ciencias generales",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Dibujo artístico",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Dibujo técnico aplicado a las artes plásticas y el diseño",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Diseño",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Física",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Fundamentos artísticos (fundamentos de las artes)",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Economía de la empresa",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geografía",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Geología y ciencias ambientales",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Historia del arte",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Griego",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Latín",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Matemáticas aplicadas a las ccss",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Movimientos culturales y artísticos",
+                "valor": 0.2
+            },
+            {
+                "nombre": "Química",
+                "valor": 0.1
+            },
+            {
+                "nombre": "Técnicas de expresión gráfico-plástica",
                 "valor": 0.1
             }
         ]
